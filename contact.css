@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+@media (max-width: 992px) {
+    .container {
+      margin-top: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  @media (max-width: 768px) {
+    iframe {
+      height: 300px;
+    }
+  }
+
+
+  .bg{
+    background-color: #e6ebf5;
+    border-radius: 9px;
+  }
+
+  .primary{
+        background-color: #4E2A84;
+        color: white;
+        
+    }
+    
+   
+    .contact-section {
+        background-color: #f8f9fa;
+    }
+    .social-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-card a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .social-card h4 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .social-card p {
+        font-size: 1rem;
+        color: #6c757d;
+    }
+
+    .social-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-card.instagram {
+        border: 2px solid #E4405F; /* Instagram color */
+    }
+
+    .social-card.linkedin {
+        border: 2px solid #0077B5; /* LinkedIn color */
+    }
+
+    .social-card.twitter {
+        border: 2px solid #1DA1F2; /* Twitter color */
+    }
+
+    .social-card.email {
+        border: 2px solid #007bff; /* Email color */
+    }
+
+    @media (max-width: 768px) {
+        .social-card {
+            margin: 10px 0;
+        }
+    }
+    header {
+        background-color: #4E2A84;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }

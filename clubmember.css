@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.margin{
+    margin: 0px 100px;
+}
+
+
+.heading{
+    text-align: center;
+    font-weight: 1px;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.txt{
+    text-align: justify;    
+    font-size: 100%;
+    padding-top: 30px;
+}
+
+img{
+    
+    border-radius: 6px;
+}
+.member-image {
+    height: 400px;
+    object-fit: cover;
+}
+.members-img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+body {
+    overflow-x: hidden;
+
+
+}
+
+.hero {
+    background: #4E2A84;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+/* Hide extra overflow content */
+.container {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* For mobile view: images one after another */
+    .row-cols-1 .col {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+    .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Two columns for tablet view */
+    .row-cols-1 {
+        grid-template-columns: repeat(2, 0fr);
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Centering text and image */
+    .card {
+        text-align: center;
+        width: 90%; /* Slightly reduce card width for better alignment */
+    }
+
+    /* Bigger text and spacing for tablet */
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .members-img {
+        max-width: 80%; /* Reduce image size slightly for better layout */
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop styles (optional) */
+@media (min-width: 1025px) {
+    /* Adjustments for larger screens, if needed */
+}
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    .member-image {
+        max-height: 300px;
+    }
+    .card-body {
+        text-align: left;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    .member-image {
+        max-height: 350px;
+    }
+    .card-body {
+        text-align: center;
+    }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+    .member-image {
+        max-height: 400px;
+    }
+    .card-body {
+        text-align: justify;
+    }
+}
+
+
